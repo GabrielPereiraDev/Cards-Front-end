@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body.container {
+    background: #F6F9FF;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #434343;
+}
+
+h1 {
+    text-align: center;
+    margin: 25px 0;
+}
+
+main.cards {
+    display: flex;  
+    padding: 30px;
+}
+
+.cards {
+    justify-content: center;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #e9ebee;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    max-height: 272px;
+    margin-left: 32px;
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+.card span {
+    /*font-weight: 300;*/
+    max-width: 200px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 22px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 700;
+    color: #fff;
+}
+
+.Lhtml button {
+    background: linear-gradient(to right, #FC490B, #F9B39F);
+}
+
+.css button {
+    background: linear-gradient(to right, #2196F3, #badbf7);
+}
+
+.javascript button {
+    background: linear-gradient(to right, #FFDF00, #e7e3c6);
+}
+
+section.card {
+    box-shadow: 20px 20px 50px -30px #2a2c2e;
+}
+
+@media screen and (max-width: 720px) {
+
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    .card {
+        font-weight: 500;
+    }
+}
